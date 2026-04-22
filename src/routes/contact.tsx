@@ -36,21 +36,21 @@ function Contact() {
                 <MapPin className="text-gold mt-1" size={20} />
                 <div>
                   <p className="text-xs tracking-[0.3em] uppercase text-muted-foreground">Atelier</p>
-                  <p className="mt-1">Colombo, Sri Lanka</p>
+                  <p className="mt-1">63 New Kankanangoda,<br />Chinafort, Beruwala,<br />Sri Lanka</p>
                 </div>
               </li>
               <li className="flex items-start gap-4">
                 <Phone className="text-gold mt-1" size={20} />
                 <div>
                   <p className="text-xs tracking-[0.3em] uppercase text-muted-foreground">Telephone</p>
-                  <a href="tel:+94777695759" className="mt-1 block hover:text-gold">+94 77 769 5759</a>
+                  <a href="tel:+94767107505" className="mt-1 block hover:text-gold">+94 76 710 7505</a>
                 </div>
               </li>
               <li className="flex items-start gap-4">
                 <Mail className="text-gold mt-1" size={20} />
                 <div>
                   <p className="text-xs tracking-[0.3em] uppercase text-muted-foreground">Email</p>
-                  <a href="mailto:hello@heygems.lk" className="mt-1 block hover:text-gold">hello@heygems.lk</a>
+                  <a href="mailto:Mishkathmax@gmail.com" className="mt-1 block hover:text-gold">Mishkathmax@gmail.com</a>
                 </div>
               </li>
               <li className="flex items-start gap-4">

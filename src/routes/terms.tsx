@@ -24,7 +24,7 @@ const sections = [
   },
   {
     title: "3. Online Order Cancellations",
-    body: `If you wish to cancel an order please email us immediately at hello@heygems.lk or call us on +94 77 769 5759. Please note that we cannot accept cancellations for bespoke orders or personal orders that include any personalisation.`,
+    body: `If you wish to cancel an order please email us immediately at Mishkathmax@gmail.com or call us on +94 76 710 7505. Please note that we cannot accept cancellations for bespoke orders or personal orders that include any personalisation.`,
   },
   {
     title: "4. Prices",
@@ -52,7 +52,7 @@ const sections = [
   },
   {
     title: "10. Disputes / Feedback",
-    body: `If you have any questions, comments or wish to get in touch with us, please email us at hello@heygems.lk or call us on +94 77 769 5759.`,
+    body: `If you have any questions, comments or wish to get in touch with us, please email us at Mishkathmax@gmail.com or call us on +94 76 710 7505.`,
   },
 ];
 

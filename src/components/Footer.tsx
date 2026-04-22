@@ -26,9 +26,9 @@ export function Footer() {
         <div>
           <h4 className="text-xs tracking-[0.3em] uppercase text-gold mb-5">Contact</h4>
           <ul className="space-y-3 text-sm text-ivory/80">
-            <li className="flex items-start gap-2"><MapPin size={14} className="mt-1 text-gold" /> Colombo, Sri Lanka</li>
-            <li className="flex items-center gap-2"><Phone size={14} className="text-gold" /> +94 77 769 5759</li>
-            <li className="flex items-center gap-2"><Mail size={14} className="text-gold" /> hello@heygems.lk</li>
+            <li className="flex items-start gap-2"><MapPin size={14} className="mt-1 text-gold" /><span>Colombo, Sri Lanka</span></li>
+            <li className="flex items-center gap-2"><Phone size={14} className="text-gold" /><span>+94 77 769 5759</span></li>
+            <li className="flex items-center gap-2"><Mail size={14} className="text-gold" /><span>hello@heygems.lk</span></li>
             <li>
               <a
                 href="https://instagram.com/HEY_GEMS_INTERNATIONAL"

@@ -25,7 +25,7 @@ export function Header() {
             <Link
               key={l.to}
               to={l.to}
-              className="text-[13px] tracking-[0.2em] uppercase text-ivory/80 hover:text-gold transition-colors"
+              className="text-[13px] tracking-[0.2em] uppercase text-white hover:text-gold transition-colors"
               activeProps={{ className: "text-gold" }}
               activeOptions={{ exact: true }}
             >
@@ -51,7 +51,7 @@ export function Header() {
                 key={l.to}
                 to={l.to}
                 onClick={() => setOpen(false)}
-                className="text-sm tracking-[0.2em] uppercase text-ivory/80 hover:text-gold"
+                className="text-sm tracking-[0.2em] uppercase text-white hover:text-gold"
                 activeProps={{ className: "text-gold" }}
               >
                 {l.label}

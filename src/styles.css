@@ -1,6 +1,7 @@
 @import "tailwindcss" source(none);
 @source "../src";
 @import "tw-animate-css";
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;500;600;700&family=Inter:wght@300;400;500;600&display=swap');
 
 @custom-variant dark (&:is(.dark *));
 
@@ -59,18 +60,25 @@
   --color-sidebar-accent-foreground: var(--sidebar-accent-foreground);
   --color-sidebar-border: var(--sidebar-border);
   --color-sidebar-ring: var(--sidebar-ring);
+  --color-gold: var(--gold);
+  --color-gold-soft: var(--gold-soft);
+  --font-serif: 'Cormorant Garamond', serif;
+  --font-sans: 'Inter', sans-serif;
 }
 
 :root {
-  --radius: 0.625rem;
-  --background: oklch(1 0 0);
-  --foreground: oklch(0.129 0.042 264.695);
+  --radius: 0.5rem;
+  /* Hey Gems palette: deep midnight, ivory, antique gold */
+  --background: oklch(0.98 0.005 90);
+  --foreground: oklch(0.18 0.02 250);
+  --gold: oklch(0.72 0.13 75);
+  --gold-soft: oklch(0.85 0.08 80);
   --card: oklch(1 0 0);
   --card-foreground: oklch(0.129 0.042 264.695);
   --popover: oklch(1 0 0);
   --popover-foreground: oklch(0.129 0.042 264.695);
-  --primary: oklch(0.208 0.042 265.755);
-  --primary-foreground: oklch(0.984 0.003 247.858);
+  --primary: oklch(0.18 0.04 250);
+  --primary-foreground: oklch(0.98 0.005 90);
   --secondary: oklch(0.968 0.007 247.896);
   --secondary-foreground: oklch(0.208 0.042 265.755);
   --muted: oklch(0.968 0.007 247.896);
@@ -140,5 +148,40 @@
   body {
     background-color: var(--color-background);
     color: var(--color-foreground);
+    font-family: var(--font-sans);
+  }
+
+  h1, h2, h3, h4, .font-serif {
+    font-family: var(--font-serif);
+    letter-spacing: -0.01em;
+  }
+}
+
+@layer utilities {
+  .text-gold { color: var(--gold); }
+  .bg-gold { background-color: var(--gold); }
+  .border-gold { border-color: var(--gold); }
+  .bg-midnight { background-color: oklch(0.18 0.04 250); }
+  .text-ivory { color: oklch(0.98 0.005 90); }
+  .bg-ivory { background-color: oklch(0.98 0.005 90); }
+
+  .gold-divider {
+    height: 1px;
+    width: 60px;
+    background: linear-gradient(90deg, transparent, var(--gold), transparent);
+    margin: 1.25rem auto;
+  }
+
+  .hero-overlay {
+    background: linear-gradient(180deg, oklch(0.18 0.04 250 / 0.5) 0%, oklch(0.12 0.03 250 / 0.85) 100%);
+  }
+
+  .fade-in {
+    animation: fadeUp 0.9s ease-out both;
+  }
+
+  @keyframes fadeUp {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
   }
 }

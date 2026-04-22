@@ -27,16 +27,22 @@ export function Footer() {
           <h4 className="text-xs tracking-[0.3em] uppercase text-gold mb-5">Contact</h4>
           <ul className="space-y-3 text-sm text-ivory/80">
             <li className="flex items-start gap-2"><MapPin size={14} className="mt-1 text-gold" /> <span>63 New Kankanangoda,<br />Chinafort, Beruwala,<br />Sri Lanka</span></li>
-            <li className="flex items-center gap-2"><Phone size={14} className="text-gold" /> <span>+94 76 710 7505</span></li>
-            <li className="flex items-center gap-2"><Mail size={14} className="text-gold" /> <span>Mishkathmax@gmail.com</span></li>
+            <li className="flex items-center gap-2">
+              <Phone size={14} className="text-gold" />
+              <a href="tel:+94767107505" className="hover:text-gold">+94 76 710 7505</a>
+            </li>
+            <li className="flex items-center gap-2">
+              <Mail size={14} className="text-gold" />
+              <a href="mailto:Mishkathmax@gmail.com" className="hover:text-gold">Mishkathmax@gmail.com</a>
+            </li>
             <li>
               <a
-                href="https://instagram.com/HEY_GEMS_INTERNATIONAL"
+                href="https://www.instagram.com/hey_gems_international"
                 target="_blank"
                 rel="noreferrer"
                 className="inline-flex items-center gap-2 hover:text-gold"
               >
-                <Instagram size={14} className="text-gold" /> @HEY_GEMS_INTERNATIONAL
+                <Instagram size={14} className="text-gold" /> @hey_gems_international
               </a>
             </li>
           </ul>

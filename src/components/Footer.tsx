@@ -37,7 +37,7 @@ export function Footer() {
             </li>
             <li>
               <a
-                href="https://www.instagram.com/hey_gems_international?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=="
+                href="https://www.instagram.com/HEY_GEMS_INTERNATIONAL"
                 target="_blank"
                 rel="noreferrer"
                 className="inline-flex items-center gap-2 hover:text-gold"

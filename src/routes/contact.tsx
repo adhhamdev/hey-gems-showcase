@@ -57,7 +57,7 @@ function Contact() {
                 <Instagram className="text-gold mt-1" size={20} />
                 <div>
                   <p className="text-xs tracking-[0.3em] uppercase text-muted-foreground">Instagram</p>
-                  <a href="https://www.instagram.com/hey_gems_international?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" target="_blank" rel="noreferrer" className="mt-1 block hover:text-gold">
+                  <a href="https://www.instagram.com/HEY_GEMS_INTERNATIONAL" target="_blank" rel="noreferrer" className="mt-1 block hover:text-gold">
                     @hey_gems_international
                   </a>
                 </div>

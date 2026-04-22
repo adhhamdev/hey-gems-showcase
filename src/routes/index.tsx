@@ -18,8 +18,8 @@ function Index() {
     <Layout>
       {/* HERO */}
       <section className="relative min-h-screen flex items-center justify-center text-center text-ivory bg-midnight overflow-hidden">
-        <div className="absolute inset-0 opacity-100 bg-[radial-gradient(circle_at_50%_30%,oklch(0.18_0_0),transparent_60%)]" />
-        <div className="absolute inset-0 opacity-60 bg-[radial-gradient(circle_at_80%_80%,oklch(0.22_0_0),transparent_60%)]" />
+        <div className="absolute inset-0 opacity-30 bg-[radial-gradient(circle_at_50%_30%,var(--gold),transparent_55%)]" />
+        <div className="absolute inset-0 opacity-10 bg-[radial-gradient(circle_at_80%_80%,var(--gold),transparent_60%)]" />
         <div className="relative z-10 px-6 max-w-3xl fade-in">
           <p className="text-xs md:text-sm tracking-[0.5em] text-gold mb-6">EST. CEYLON · SRI LANKA</p>
           <h1 className="font-serif text-5xl md:text-7xl leading-tight">

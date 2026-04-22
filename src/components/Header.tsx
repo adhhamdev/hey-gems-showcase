@@ -5,9 +5,8 @@ import { Menu, X } from "lucide-react";
 const links = [
   { to: "/", label: "Home" },
   { to: "/about", label: "About" },
-  { to: "/collection", label: "Collection" },
-  { to: "/services", label: "Services" },
   { to: "/contact", label: "Contact" },
+  { to: "/terms", label: "Terms" },
 ] as const;
 
 export function Header() {

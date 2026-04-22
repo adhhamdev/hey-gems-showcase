@@ -62,7 +62,7 @@ function Contact() {
 
           <form className="bg-secondary p-10 border border-border" onSubmit={(e) => e.preventDefault()}>
             <p className="text-xs tracking-[0.4em] text-gold">SEND A MESSAGE</p>
-            <h3 className="font-serif text-3xl mt-3 mb-8">Tell us about your stone</h3>
+            <h3 className="font-serif text-3xl mt-3 mb-8">Send us a note</h3>
 
             <div className="space-y-5">
               <div>

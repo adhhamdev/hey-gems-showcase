@@ -9,9 +9,8 @@ export function Footer() {
           <h3 className="font-serif text-2xl tracking-widest">HEY GEMS</h3>
           <p className="text-xs tracking-[0.4em] text-gold mt-1">INTERNATIONAL</p>
           <p className="mt-6 text-sm text-ivory/70 max-w-md leading-relaxed">
-            A Sri Lankan house of fine gemstones — sourcing, cutting and curating ethically
-            mined Ceylon sapphires, rubies and rare coloured stones for collectors and
-            jewellers worldwide.
+            A Sri Lankan house rooted in the heritage of Ceylon — quietly serving
+            collectors, jewellers and connoisseurs around the world.
           </p>
         </div>
 
@@ -19,10 +18,8 @@ export function Footer() {
           <h4 className="text-xs tracking-[0.3em] uppercase text-gold mb-5">Explore</h4>
           <ul className="space-y-3 text-sm text-ivory/80">
             <li><Link to="/about" className="hover:text-gold">About Us</Link></li>
-            <li><Link to="/collection" className="hover:text-gold">Collection</Link></li>
-            <li><Link to="/services" className="hover:text-gold">Services</Link></li>
             <li><Link to="/contact" className="hover:text-gold">Contact</Link></li>
-            <li><Link to="/terms" className="hover:text-gold">Terms & Conditions</Link></li>
+            <li><Link to="/terms" className="hover:text-gold">Terms &amp; Conditions</Link></li>
           </ul>
         </div>
 

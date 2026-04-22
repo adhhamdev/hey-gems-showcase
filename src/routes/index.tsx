@@ -1,5 +1,7 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
 import { Layout } from "@/components/Layout";
+import sapphireHero from "@/assets/sapphire-hero.jpg";
+import gemsCluster from "@/assets/gems-cluster.jpg";
 
 export const Route = createFileRoute("/")({
   head: () => ({
@@ -18,8 +20,15 @@ function Index() {
     <Layout>
       {/* HERO */}
       <section className="relative min-h-screen flex items-center justify-center text-center text-ivory bg-midnight overflow-hidden">
-        <div className="absolute inset-0 opacity-30 bg-[radial-gradient(circle_at_50%_30%,var(--gold),transparent_55%)]" />
-        <div className="absolute inset-0 opacity-10 bg-[radial-gradient(circle_at_80%_80%,var(--gold),transparent_60%)]" />
+        <img
+          src={sapphireHero}
+          alt="A single brilliant blue Ceylon sapphire glowing against a dark background"
+          width={1920}
+          height={1280}
+          className="absolute inset-0 w-full h-full object-cover opacity-60"
+        />
+        <div className="absolute inset-0 hero-overlay" />
+        <div className="absolute inset-0 opacity-25 bg-[radial-gradient(circle_at_50%_30%,var(--gold),transparent_55%)]" />
         <div className="relative z-10 px-6 max-w-3xl fade-in">
           <p className="text-xs md:text-sm tracking-[0.5em] text-gold mb-6">EST. CEYLON · SRI LANKA</p>
           <h1 className="font-serif text-5xl md:text-7xl leading-tight">
@@ -77,6 +86,25 @@ function Index() {
               </div>
             ))}
           </div>
+        </div>
+      </section>
+
+      {/* GEMS BANNER */}
+      <section className="relative h-[55vh] min-h-[380px] overflow-hidden">
+        <img
+          src={gemsCluster}
+          alt="A scattered arrangement of Ceylon gemstones on dark velvet"
+          loading="lazy"
+          width={1600}
+          height={1024}
+          className="absolute inset-0 w-full h-full object-cover"
+        />
+        <div className="absolute inset-0 bg-midnight/60" />
+        <div className="relative h-full flex flex-col items-center justify-center text-center text-ivory px-6">
+          <p className="text-xs tracking-[0.5em] text-gold mb-4">RATNA-DWEEPA</p>
+          <h2 className="font-serif text-3xl md:text-5xl max-w-2xl">
+            The Island of Gems, in every stone we touch.
+          </h2>
         </div>
       </section>
 

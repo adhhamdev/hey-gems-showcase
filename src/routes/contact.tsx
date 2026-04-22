@@ -1,6 +1,7 @@
 import { createFileRoute } from "@tanstack/react-router";
 import { Layout, PageHero } from "@/components/Layout";
 import { Instagram, Mail, Phone, MapPin } from "lucide-react";
+import gemsCluster from "@/assets/gems-cluster.jpg";
 
 export const Route = createFileRoute("/contact")({
   head: () => ({
@@ -20,11 +21,15 @@ function Contact() {
       <PageHero title="Get in Touch" subtitle="We respond to every enquiry personally — usually within one business day." />
 
       <section className="py-24 px-6">
-        <div className="max-w-5xl mx-auto grid md:grid-cols-2 gap-16">
+        <div className="max-w-5xl mx-auto grid md:grid-cols-2 gap-16 items-center">
           <div>
             <p className="text-xs tracking-[0.4em] text-gold">DIRECT CONTACT</p>
             <h2 className="font-serif text-4xl mt-4">Reach our atelier</h2>
             <div className="h-px w-16 bg-gold my-6" />
+            <p className="text-muted-foreground mb-8 leading-relaxed">
+              For private enquiries, sourcing requests or simply a conversation —
+              we are reachable through any of the channels below.
+            </p>
 
             <ul className="space-y-6 text-foreground">
               <li className="flex items-start gap-4">
@@ -60,28 +65,21 @@ function Contact() {
             </ul>
           </div>
 
-          <form className="bg-secondary p-10 border border-border" onSubmit={(e) => e.preventDefault()}>
-            <p className="text-xs tracking-[0.4em] text-gold">SEND A MESSAGE</p>
-            <h3 className="font-serif text-3xl mt-3 mb-8">Send us a note</h3>
-
-            <div className="space-y-5">
-              <div>
-                <label className="text-xs tracking-[0.2em] uppercase text-muted-foreground">Name</label>
-                <input className="mt-2 w-full bg-background border border-border px-4 py-3 focus:border-gold outline-none" />
-              </div>
-              <div>
-                <label className="text-xs tracking-[0.2em] uppercase text-muted-foreground">Email</label>
-                <input type="email" className="mt-2 w-full bg-background border border-border px-4 py-3 focus:border-gold outline-none" />
-              </div>
-              <div>
-                <label className="text-xs tracking-[0.2em] uppercase text-muted-foreground">Message</label>
-                <textarea rows={5} className="mt-2 w-full bg-background border border-border px-4 py-3 focus:border-gold outline-none resize-none" />
-              </div>
-              <button className="w-full px-8 py-3 bg-midnight text-ivory text-xs tracking-[0.3em] uppercase hover:bg-gold hover:text-midnight transition-colors">
-                Send Enquiry
-              </button>
+          <div className="relative aspect-[4/5] overflow-hidden border border-gold/20">
+            <img
+              src={gemsCluster}
+              alt="A scattered arrangement of Ceylon gemstones — sapphires, rubies and emeralds — on dark velvet"
+              loading="lazy"
+              width={1600}
+              height={1024}
+              className="absolute inset-0 w-full h-full object-cover"
+            />
+            <div className="absolute inset-0 bg-gradient-to-t from-midnight/70 via-transparent to-transparent" />
+            <div className="absolute bottom-0 left-0 right-0 p-8 text-ivory">
+              <p className="text-xs tracking-[0.4em] text-gold">CEYLON · SRI LANKA</p>
+              <p className="font-serif text-2xl mt-2">The Island of Gems</p>
             </div>
-          </form>
+          </div>
         </div>
       </section>
     </Layout>

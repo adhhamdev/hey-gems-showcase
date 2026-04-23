@@ -1,6 +1,6 @@
-import { Outlet, Link, createRootRoute, HeadContent, Scripts } from "@tanstack/react-router";
+import { Outlet, Link, createRootRoute } from "@tanstack/react-router";
 
-import appCss from "../styles.css?url";
+import "../styles.css";
 
 function NotFoundComponent() {
   return (
@@ -25,47 +25,9 @@ function NotFoundComponent() {
 }
 
 export const Route = createRootRoute({
-  head: () => ({
-    meta: [
-      { charSet: "utf-8" },
-      { name: "viewport", content: "width=device-width, initial-scale=1" },
-      { title: "Hey Gems International" },
-      { name: "description", content: "Hey Gems Showcase is a professional portfolio website for a Sri Lankan gem business." },
-      { name: "author", content: "Lovable" },
-      { property: "og:title", content: "Hey Gems International" },
-      { property: "og:description", content: "Hey Gems Showcase is a professional portfolio website for a Sri Lankan gem business." },
-      { property: "og:type", content: "website" },
-      { name: "twitter:card", content: "summary" },
-      { name: "twitter:title", content: "Hey Gems International" },
-      { name: "twitter:description", content: "Hey Gems Showcase is a professional portfolio website for a Sri Lankan gem business." },
-      { property: "og:image", content: "https://pub-bb2e103a32db4e198524a2e9ed8f35b4.r2.dev/c07daa6d-35c8-489c-baf1-1ae96d68d197/id-preview-d9c748cf--1d2d4cd1-12f8-4e28-99dc-85195e1d971d.lovable.app-1776872309859.png" },
-      { name: "twitter:image", content: "https://pub-bb2e103a32db4e198524a2e9ed8f35b4.r2.dev/c07daa6d-35c8-489c-baf1-1ae96d68d197/id-preview-d9c748cf--1d2d4cd1-12f8-4e28-99dc-85195e1d971d.lovable.app-1776872309859.png" },
-    ],
-    links: [
-      {
-        rel: "stylesheet",
-        href: appCss,
-      },
-    ],
-  }),
-  shellComponent: RootShell,
   component: RootComponent,
   notFoundComponent: NotFoundComponent,
 });
-
-function RootShell({ children }: { children: React.ReactNode }) {
-  return (
-    <html lang="en">
-      <head>
-        <HeadContent />
-      </head>
-      <body>
-        {children}
-        <Scripts />
-      </body>
-    </html>
-  );
-}
 
 function RootComponent() {
   return <Outlet />;

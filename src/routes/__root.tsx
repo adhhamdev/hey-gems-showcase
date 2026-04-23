@@ -36,7 +36,6 @@ export const Route = createRootRoute({
       { property: "og:description", content: "Hey Gems Showcase is a professional portfolio website for a Sri Lankan gem business." },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary" },
-      { name: "twitter:site", content: "@Lovable" },
       { name: "twitter:title", content: "Hey Gems International" },
       { name: "twitter:description", content: "Hey Gems Showcase is a professional portfolio website for a Sri Lankan gem business." },
       { property: "og:image", content: "https://pub-bb2e103a32db4e198524a2e9ed8f35b4.r2.dev/c07daa6d-35c8-489c-baf1-1ae96d68d197/id-preview-d9c748cf--1d2d4cd1-12f8-4e28-99dc-85195e1d971d.lovable.app-1776872309859.png" },

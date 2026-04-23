@@ -1,5 +1,5 @@
-import { createFileRoute } from "@tanstack/react-router";
 import { Layout, PageHero } from "@/components/Layout";
+import { createFileRoute } from "@tanstack/react-router";
 
 export const Route = createFileRoute("/gallery")({
   head: () => ({
@@ -14,9 +14,21 @@ export const Route = createFileRoute("/gallery")({
 });
 
 const videos = [
-  { src: "/videos/gem-1.mp4", title: "Ceylon Blue", caption: "A sapphire turning slowly under candlelight." },
-  { src: "/videos/gem-2.mp4", title: "Inner Fire", caption: "Light caught inside a hand-cut stone." },
-  { src: "/videos/gem-3.mp4", title: "Island Light", caption: "Color, the way Ceylon gives it." },
+  { src: "/videos/gem-1.mp4" },
+  { src: "/videos/gem-2.mp4" },
+  { src: "/videos/gem-3.mp4" },
+  { src: "/videos/gem-4.mp4" },
+  { src: "/videos/gem-5.mp4" },
+  { src: "/videos/gem-6.mp4" },
+  { src: "/videos/gem-7.mp4" },
+  { src: "/videos/gem-8.mp4" },
+  { src: "/videos/gem-9.mp4" },
+  { src: "/videos/gem-10.mp4" },
+  { src: "/videos/gem-11.mp4" },
+  { src: "/videos/gem-12.mp4" },
+  { src: "/videos/gem-13.mp4" },
+  { src: "/videos/gem-14.mp4" }
+
 ];
 
 function GalleryPage() {
@@ -44,13 +56,7 @@ function GalleryPage() {
                   playsInline
                   preload="metadata"
                 />
-                <div className="pointer-events-none absolute inset-0 bg-gradient-to-t from-midnight/80 via-transparent to-transparent" />
               </div>
-              <figcaption className="px-5 py-4 border-t border-gold/15">
-                <p className="text-[10px] tracking-[0.4em] text-gold uppercase">Ceylon</p>
-                <h3 className="font-serif text-xl text-ivory mt-1">{v.title}</h3>
-                <p className="text-sm text-ivory/60 mt-1">{v.caption}</p>
-              </figcaption>
             </figure>
           ))}
         </div>

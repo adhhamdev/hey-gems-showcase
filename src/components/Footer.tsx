@@ -50,9 +50,18 @@ export function Footer() {
       </div>
 
       <div className="border-t border-ivory/10">
-        <div className="mx-auto max-w-7xl px-6 py-6 flex flex-col md:flex-row justify-between items-center gap-2 text-xs text-ivory/50">
+        <div className="mx-auto max-w-7xl px-6 py-6 flex flex-col md:flex-row justify-between items-center gap-4 text-xs text-ivory/50">
           <p>© {new Date().getFullYear()} Hey Gems International. All rights reserved.</p>
-          <p className="tracking-widest">CRAFTED IN CEYLON</p>
+          <div className="flex flex-col md:flex-row items-center gap-2 md:gap-4">
+            <p className="tracking-widest">CRAFTED IN CEYLON</p>
+            <span className="hidden md:block opacity-30">|</span>
+            <p>
+              Built by{" "}
+              <a href="https://adhham.dev" target="_blank" rel="noreferrer" className="text-gold hover:text-ivory transition-colors">
+                Adhham
+              </a>
+            </p>
+          </div>
         </div>
       </div>
     </footer>
